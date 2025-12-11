@@ -1,0 +1,22 @@
+/* シンプルなレスポンシブスタイル */
+:root{--accent:#0066cc;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;margin:0;color:#222;line-height:1.6}
+.container{max-width:1000px;margin:0 auto;padding:0 16px}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo img{display:block}
+.main-nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+.hero{background:linear-gradient(180deg, #f5f8ff, #fff);padding:48px 0;text-align:center}
+.hero h1{font-size:2.2rem;margin:0}
+.lead{color:var(--muted);margin-top:8px}
+.cta{display:inline-block;margin-top:12px;padding:10px 18px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.section{padding:32px 0}
+.news-list{list-style:none;padding:0;margin:0}
+.news-list li{padding:8px 0;border-bottom:1px dashed #eee}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px}
+.card{border:1px solid #eee;padding:16px;border-radius:8px;background:#fff}
+.map-placeholder{height:180px;background:#fafafa;border:1px dashed #ddd;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.site-footer{background:#f7f7f7;padding:16px 0;border-top:1px solid #eee;margin-top:24px}
+.secondary-cta{color:var(--accent);text-decoration:underline}
+@media (max-width:600px){.site-header .container{flex-direction:column;align-items:flex-start}.main-nav{margin-top:8px}.hero{padding:36px 0}.hero h1{font-size:1.6rem}}
